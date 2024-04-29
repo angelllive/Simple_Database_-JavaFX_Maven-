@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.*?>
+
+<VBox alignment="CENTER" spacing="20" xmlns="http://javafx.com/javafx/11"
+    xmlns:fx="http://javafx.com/fxml/1">
+
+    <!-- Круговая диаграмма -->
+    <PieChart fx:id="pieChart" prefWidth="400" prefHeight="400">
+        <data>
+            <!-- Здесь будут данные круговой диаграммы -->
+        </data>
+    </PieChart>
+
+    <!-- Столбчатая диаграмма -->
+    <BarChart fx:id="barChart" prefWidth="400" prefHeight="400">
+        <xAxis>
+            <CategoryAxis side="BOTTOM" label="Department" />
+        </xAxis>
+        <yAxis>
+            <NumberAxis side="LEFT" label="Student Count" />
+        </yAxis>
+        <data>
+            <!-- Здесь будут данные столбчатой диаграммы -->
+        </data>
+    </BarChart>
+
+</VBox>
